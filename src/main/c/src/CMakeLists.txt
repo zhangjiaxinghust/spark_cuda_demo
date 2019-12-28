@@ -1,0 +1,4 @@
+add_compile_options(-fPIC)
+SET(LIBRARY_OUTPUT_PATH /usr/local/spark/dynamic)
+AUX_SOURCE_DIRECTORY(_cpp DIR_TEST1_SRCS)
+CUDA_ADD_LIBRARY( Test1 SHARED ${DIR_TEST1_SRCS})
